@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://GFX/Background/bg_layer1.png" type="Texture" id=1]
+[ext_resource path="res://Levels/GameOver.gd" type="Script" id=2]
+[ext_resource path="res://GFX/HUD/lifes.png" type="Texture" id=3]
+[ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 108
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+font_data = ExtResource( 4 )
+
+[node name="GameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 186.0
+margin_top = 188.0
+margin_right = 837.0
+margin_bottom = 412.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 651.0
+margin_bottom = 138.0
+custom_colors/font_color = Color( 1, 0.584314, 0.309804, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Game Over!"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 142.0
+margin_right = 651.0
+margin_bottom = 224.0
+custom_constants/separation = 20
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+margin_left = 119.0
+margin_right = 171.0
+margin_bottom = 82.0
+texture_normal = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+margin_left = 191.0
+margin_right = 531.0
+margin_bottom = 82.0
+custom_colors/font_color = Color( 1, 0.623529, 0.321569, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Try Again"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/TextureButton" to="." method="_on_TextureButton_pressed"]
