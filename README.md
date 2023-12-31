@@ -3,4 +3,4 @@ where you find a portal to be entered. But, there are obstacles in the way in th
 So, the player's aim is to navigate the bunny in an efficient manner trying to avoid these obstacles before the lives of the bunny runs out while collectinig as much coins as possible on the map and then finally reaching
 the portal.
 
-If you are interested in becoming the player who helps out the poor lil bunny reach the portal, Download the game from the link here : [Download Link](https://drive.google.com/drive/folders/1KAhrKQ5mw7_4Er-3o6I7MYznADii3ANO?usp=sharing)
+If you are interested in becoming the player who helps out the poor lil bunny reach the portal, Download the game from the link here : [Download Link](https://drive.google.com/uc?export=download&id=1pJXXkATb79JnBhiZNHJ-k_9u1_H4S6LG)
